@@ -22,14 +22,30 @@
 ###############################################################################
 # Imports
 
+import math
 
 # Body
 
 
+def eval_loop():
+    s = ''
+    last_result = 'n/a'
+    while s != "done":
+        s = ''
+        try:
+            s = input("What do you want evaluated? ")
+            if s == 'done':
+                break
+            last_result = eval(s)
+            print(last_result)
+        except:
+            print("Sorry, I cannot evaluate this. If you are done, please say 'done'.")
+    return last_result
+
+
 ###############################################################################
 def main():
-    pass  # Remove this line and uncomment below once eval_loop is defined.
-    # eval_loop()
+    eval_loop()
 
 if __name__ == '__main__':
     main()

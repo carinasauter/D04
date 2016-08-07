@@ -21,13 +21,23 @@
 
 # Body
 
+def letter_in_word(string, letter_searched):
+    count = 0
+    for letter in string:
+        if letter == letter_searched:
+            count += 1
+    print(count)
 
 ###############################################################################
+
+
 def main():
 
     # Remove print("Hello World!") and add several functions calls to count()
     # below, passing various strings and letters
-    print("Hello World!")
+    letter_in_word('banana', 'a')
+    letter_in_word('car', 'm')
+    letter_in_word('this will be a really long string', 'l')
 
 
 if __name__ == '__main__':

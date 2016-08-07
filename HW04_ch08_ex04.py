@@ -14,7 +14,7 @@
 
 
 def any_lowercase1(s):
-    """Explain what is wrong, if anything, here.
+    """ This only checks if all letters are lower case. If not, then it returns false.
     """
     for c in s:
         if c.islower():
@@ -24,7 +24,7 @@ def any_lowercase1(s):
 
 
 def any_lowercase2(s):
-    """Explain what is wrong, if anything, here.
+    """ Will always return True.
     """
     for c in s:
         if 'c'.islower():
@@ -34,7 +34,7 @@ def any_lowercase2(s):
 
 
 def any_lowercase3(s):
-    """Explain what is wrong, if anything, here.
+    """Will only return True if the last letter in s is lowercase.
     """
     for c in s:
         flag = c.islower()
@@ -42,7 +42,7 @@ def any_lowercase3(s):
 
 
 def any_lowercase4(s):
-    """Explain what is wrong, if anything, here.
+    """This one works :)
     """
     flag = False
     for c in s:
@@ -51,7 +51,7 @@ def any_lowercase4(s):
 
 
 def any_lowercase5(s):
-    """Explain what is wrong, if anything, here.
+    """Only works if all letters are lowercase. Otherwise the one false is going to set everything else to false
     """
     for c in s:
         if not c.islower():
@@ -61,12 +61,10 @@ def any_lowercase5(s):
 
 ###############################################################################
 def main():
-
-    # Remove print("Hello World!") and for each function above that is wrong,
-    # call that function with a string for which the function returns
-    # incorrectly.
-    # ex.: any_lowercase_("thisstringmessesupthefunction")
-    print("Hello World!")
+    print(any_lowercase1("Hello"))
+    print(any_lowercase2('HELLO'))
+    print(any_lowercase3('HellO'))
+    print(any_lowercase5('HeLLO'))
 
 
 if __name__ == '__main__':
